@@ -13,14 +13,7 @@ import BlogPost from '../components/BlogPost.astro'
 		<!-- <li><a href='/posts/post-1/'>Post 1</a></li>
 		<li><a href='/posts/post-2/'>Post 2</a></li>
 		<li><a href='/posts/post-3/'>Post 3</a></li> -->
-		{
-			allPosts.map(post => (
-				<li>
-					{allPosts.map(post => (
-						<BlogPost url={post.url} title={post.frontmatter.title} />
-					))}
-				</li>
-			))
-		}
+
+		{allPosts.map(post => <BlogPost url={post.url} title={post.frontmatter.title} />)}
 	</ul>
 </BaseLayout>
