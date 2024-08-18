@@ -1,4 +1,5 @@
 ---
+import Greeting from '../components/Greetings'
 import BaseLayout from '../layouts/BaseLayout.astro'
 const pageTitle = 'Home Page'
 ---
@@ -14,4 +15,8 @@ const pageTitle = 'Home Page'
 		maiores hic labore facere dignissimos! Nesciunt, et laboriosam? Dolorum deleniti
 		nisi ipsam tempore asperiores dolores recusandae dicta molestiae!
 	</h4>
+	<Greeting
+		client:load
+		messages={['Привет', 'Здравствуйте', 'Приветствую', 'Эй там']}
+	/>
 </BaseLayout>

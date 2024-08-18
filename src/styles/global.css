@@ -1,6 +1,28 @@
 html {
 	background-color: #f1f5f9;
 	font-family: sans-serif;
+	transition: 0.2s;
+}
+html.dark {
+	background-color: rgb(37, 35, 35);
+	color: #fff;
+	transition: 0.2s;
+}
+.dark .nav-links a {
+	color: #fff;
+}
+
+.dark a {
+	color: #eae0e0;
+}
+a {
+	transition: 0.2s;
+	border-radius: 7px;
+}
+
+a:hover {
+	transition: 0.2s;
+	color: #ff9776;
 }
 
 body {
@@ -45,7 +67,7 @@ h1 {
 .nav-links a {
 	display: block;
 	text-align: center;
-	padding: 7px 0;
+	padding: 4px 0;
 	text-decoration: none;
 	font-size: 1.2rem;
 	font-weight: bold;
@@ -54,7 +76,7 @@ h1 {
 
 .nav-links a:hover,
 .nav-links a:focus {
-	background-color: #ff9776;
+	background-color: #f86639;
 	border-radius: 7px;
 }
 
@@ -64,7 +86,6 @@ h1 {
 
 @media screen and (min-width: 636px) {
 	.nav-links {
-		margin-left: 5em;
 		display: block;
 		position: static;
 		width: auto;
@@ -73,7 +94,7 @@ h1 {
 
 	.nav-links a {
 		display: inline-block;
-		padding: 10px 15px;
+		padding: 8px 12px;
 	}
 	.hamburger {
 		display: none;
